@@ -1,5 +1,8 @@
-# Vitrine-do-futebol
-Plataforma de e-commerce para venda de camisetas históricas de times de futebol, permitindo que torcedores colecionem peças raras com uma experiência de compra organizada e visualmente intuitiva. Contendo:
+# 🛍️👕 Vitrine-do-futebol
+Plataforma de e-commerce para venda de camisetas históricas de times de futebol, permitindo que torcedores colecionem peças raras 
+com uma experiência de compra organizada e visualmente intuitiva. 
+
+Contendo:
 
 - Página principal com catálogo de camisetas
 - Página de detalhes do produto
@@ -14,7 +17,7 @@ Tecnologias
 Estrutura do projeto
 Vitrine-do-futebol/
   
--index.html
+- index.html
 - produto_flamengo.html
 - carrinho.html
 - pagamento.html
