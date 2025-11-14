@@ -18,7 +18,6 @@ Estrutura do projeto
 Vitrine-do-futebol/
   
 - index.html
-- produto_flamengo.html
 - carrinho.html
 - pagamento.html
   
@@ -40,9 +39,6 @@ Vitrine-do-futebol/
 - Camisa_São_Paulo_FC.png
 - Camisa_do_Vasco.png
 - Camisa_palmeiras.png
-- CarrinhoDeCompra.html
-- Pagamento.html
-- Wireframes
 - camisa_athlético_paranaense.png
 - camisa_flamengo.png
 - camisa_santos.png
