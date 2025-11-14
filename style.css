@@ -1,0 +1,879 @@
+/* ==========================
+   Reset básico do site
+   ========================== */
+html {
+  margin: 0;
+  padding: 0;
+  font-family:  "Elms Sans", sans-serif;
+}
+
+/* ==========================
+   Barra superior (preta)
+   ========================== */
+.barra-topo {
+  background-color: #222;
+  color: #fff;
+  font-size: 14px;
+  padding: 5px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.barra-topo .links-topo a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 15px;
+  font-size: 13px;
+}
+
+.barra-topo .links-topo a:hover {
+  text-decoration: underline;
+}
+
+/* ==========================
+   Barra principal (branca)
+   ========================== */
+.barra {
+  width: 100%;
+  background-color: rgb(240, 233, 205); 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-shadow: 0 10px 6px rgba(0,0,0,0.3);
+  z-index: 1000;
+}
+
+.barra .logo {
+  height: 80px;
+  width: auto;
+  margin-left: 10px;
+}
+
+/* ==========================
+   Barra de pesquisa
+   ========================== */
+.barra-pesquisa {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  padding: 5px 20px;
+  width: 450px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  margin-left: -50px;
+}
+
+.barra-pesquisa .icone-lupa {
+  height: 37px;
+  width: auto;
+  margin-right: 1px;
+}
+
+.barra-pesquisa input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+/* ==========================
+   Menu de navegação (Início | Quem Somos | Contato)
+   ========================== */
+.menu-links {
+  display: flex;
+  justify-content: flex-end;
+  gap: 60px; /* aumenta o espaçamento (padrão era 25px) */
+  margin-right: 0px;
+  margin-top: 10px;
+}
+
+.menu-links a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  font-family:  "Elms Sans", sans-serif;
+
+}
+.menu-links a:hover {
+  color: #040404;
+}
+
+/* ==========================
+   Ícone e dropdown do usuário
+   ========================== */
+.barra-icones {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 6px;
+  margin-right: 40px;
+}
+
+.barra-icones .icone-menu {
+  height: 40px;
+  width: auto;
+}
+
+.nome-usuario {
+  font-size: 15px;
+  color: #333;
+  font-weight: bold;
+  font-family:  "Elms Sans", sans-serif;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #ffffff;
+  min-width: 160px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  border-radius: 6px;
+  z-index: 999;
+  padding: 8px 0;
+  list-style: none;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #f2f2f2;
+}
+
+.dropdown.show .dropdown-menu {
+  display: block;
+}
+
+/* ==========================
+   Seção topo com imagem
+   ========================== */
+.topo {
+  background-image: url("../img/Imagem_Plano_de_fundo_Oficial.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding-top: 130px; /* compensa barra fixa */
+  font-family:  "Momo Trust Display
+", sans-serif;
+}
+
+.conteudo {
+  background-color: rgb(255, 255, 255); /*Mudar cor do fundo do conteudo principal*/
+  color: rgb(0, 0, 0);
+  padding: 50px;
+  min-height: 1200px;
+  text-align: center;
+}
+
+.titulo-img {
+  position: absolute;
+  height: 60%;
+  font-family: "Momo Trust Display", sans-serif;
+  font-size: 40px;
+  line-height: 0.6;
+  color: rgb(255, 234, 151);
+}
+
+.subtitulo-img {
+  position: absolute;
+  height: 0%;
+  font-family: "Momo Trust Display", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: rgb(255, 234, 151);
+}
+/* Frases de vendas, frete e segurança*/
+.sacola-compra {
+  width: 30px;     /* diminui o tamanho */
+  height: auto;     /* mantém a proporção */
+  display: block;   /* permite centralizar */
+  margin-left: -760px;   /* centraliza na tela */
+  margin-top: 240px;
+}
+
+.frases-compras {
+  position:absolute;
+  font-size: large;
+  font-family: "Momo Trust Display", sans-serif;
+  top: 455px;
+  left: 400px;
+  color: rgb(255, 204, 0);
+}
+
+.frete-img {
+  position: absolute;
+  width: 30px;     /* diminui o tamanho */
+  height: auto;     /* mantém a proporção */
+  display: block;   /* permite centralizar */
+  margin-left: -280px;   /* centraliza na tela */
+  margin-top: 240px;
+}
+
+.frases-frete {
+  position:absolute;
+  font-size: large;
+  font-family: "Momo Trust Display", sans-serif;
+  top: 455px;
+  left: 640px;
+  color: rgb(255, 204, 0);
+}
+
+.certificado-img {
+  position: absolute;
+  width: 30px;     /* diminui o tamanho */
+  height: auto;     /* mantém a proporção */
+  display: block;   /* permite centralizar */
+  margin-left: 490px;   /* centraliza na tela */
+  margin-top: 240px;
+}
+
+.frases-certificado {
+  position:absolute;
+  font-size: large;
+  font-family: "Momo Trust Display", sans-serif;
+  top: 455px;
+  left: 1030px;
+  color: rgb(255, 204, 0);
+}
+/* ==========================
+   Conteúdo principal
+   ========================== */
+/*conteudo design linha 01*/
+.filtro {
+  position: absolute;
+  top: 550px;
+  left: 200px;
+  width: 400px;               /* largura */
+  height: 900px;              /* altura */
+  background-color: #ffffff;  /* cinza claro */
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;          /* centraliza horizontalmente e afasta de outros elementos */
+  font-weight: 500;
+  color: #333;
+}
+.linha {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 70%;
+  height: 1px;
+  background: linear-gradient(to right, #000000, #000000);
+  margin: 20px auto;
+  border-radius: 5px;
+}
+
+.nome-filtro {
+  position: absolute;
+  top: -10px;
+  left: 150px;
+  font-size: 30px;
+}
+
+.filtro-tamanhos {
+  position: absolute;
+  top: 70px;
+  left: 90px;
+}
+
+.filtro-condiçoes {
+  position: absolute;
+  top: 160px;
+  left: 35px;
+}
+
+.filtro-pesquisar {
+  position: absolute;
+  top: 275px;
+  left: 85px;
+  background-color: #4CAF50; /* cor do botão */
+  color: white;              /* cor do texto */
+  padding: 10px 80px;        /* tamanho interno */
+  border-radius: 10px;       /* arredonda os cantos */
+  border: #fff;
+  cursor: pointer;           /* muda o cursor ao passar o mouse */
+  white-space: nowrap;          /* impede quebra de linha */
+  font-family:  "Stack Sans Notch", sans-serif;
+}
+
+/*Classe primeiro box - Linha 01 / só colar e ajustar a posição*/
+.box1 {
+  position: absolute;
+  top: 550px;
+  left: 600px;
+  width: 250px;               /* largura */
+  height: 320px;              /* altura */
+  background-color: #ffffff;  /* cinza claro */
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;          /* centraliza horizontalmente e afasta de outros elementos */
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #333;
+}
+
+.contbox1 {
+  position: absolute;
+  height: 200px;
+  left: 50px;
+  width: auto;
+  margin-top: 0px;
+}
+
+.titulobox1 {
+  position: absolute;
+  top: 180px;
+  font-family:  "Stack Sans Notch", sans-serif;
+  color: rgb(114, 114, 114);
+}
+
+.titulobox1 .valorbox1 {
+  position: absolute;
+  top: 45px;
+  left: 65px;
+  color: rgb(0, 0, 0);
+  font-family:  "Roboto Mono", sans-serif;
+  font-size: 20px;
+}
+
+.botao-carrinho01 {
+  position: absolute;
+  top: 95px;
+  left: 25px;
+  background-color: #4CAF50; /* cor do botão */
+  color: white;              /* cor do texto */
+  padding: 10px 30px;        /* tamanho interno */
+  border-radius: 10px;       /* arredonda os cantos */
+  border: #fff;
+  cursor: pointer;           /* muda o cursor ao passar o mouse */
+  white-space: nowrap;          /* impede quebra de linha */
+  font-family:  "Stack Sans Notch", sans-serif;
+}
+/*BOX2*/
+.box2 {
+  position: absolute;
+  top: 550px;
+  left: 850px;
+  width: 250px;               /* largura */
+  height: 320px;              /* altura */
+  background-color: #ffffff;  /* cinza claro */
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;          /* centraliza horizontalmente e afasta de outros elementos */
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #333;
+}
+
+.contbox2 {
+  position: absolute;
+  height: 200px;
+  left: 30px;
+  width: auto;
+  margin-top: 0px;
+}
+
+.titulobox2 {
+  position: absolute;
+  top: 180px;
+  font-family:  "Stack Sans Notch", sans-serif;
+  color: rgb(114, 114, 114);
+}
+
+.titulobox2 .valorbox2 {
+  position: absolute;
+  top: 45px;
+  left: 65px;
+  color: rgb(0, 0, 0);
+  font-family:  "Roboto Mono", sans-serif;
+  font-size: 20px;
+}
+
+.botao-carrinho02 {
+  position: absolute;
+  top: 95px;
+  left: 25px;
+  background-color: #4CAF50; /* cor do botão */
+  color: white;              /* cor do texto */
+  padding: 10px 30px;        /* tamanho interno */
+  border-radius: 10px;       /* arredonda os cantos */
+  border: #fff;
+  cursor: pointer;           /* muda o cursor ao passar o mouse */
+  white-space: nowrap;          /* impede quebra de linha */
+  font-family:  "Stack Sans Notch", sans-serif;
+}
+/*BOX3*/
+.box3 {
+  position: absolute;
+  top: 550px;
+  left: 1100px;
+  width: 250px;               /* largura */
+  height: 320px;              /* altura */
+  background-color: #ffffff;  /* cinza claro */
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;          /* centraliza horizontalmente e afasta de outros elementos */
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #333;
+}
+
+.contbox3 {
+  position: absolute;
+  height: 200px;
+  left: 50px;
+  width: auto;
+  margin-top: 0px;
+}
+
+.titulobox3 {
+  position: absolute;
+  top: 180px;
+  font-family:  "Stack Sans Notch", sans-serif;
+  color: rgb(114, 114, 114);
+}
+
+.titulobox3 .valorbox3 {
+  position: absolute;
+  top: 45px;
+  left: 65px;
+  color: rgb(0, 0, 0);
+  font-family:  "Roboto Mono", sans-serif;
+  font-size: 20px;
+}
+
+.botao-carrinho03 {
+  position: absolute;
+  top: 95px;
+  left: 25px;
+  background-color: #4CAF50; /* cor do botão */
+  color: white;              /* cor do texto */
+  padding: 10px 30px;        /* tamanho interno */
+  border-radius: 10px;       /* arredonda os cantos */
+  border: #fff;
+  cursor: pointer;           /* muda o cursor ao passar o mouse */
+  white-space: nowrap;          /* impede quebra de linha */
+  font-family:  "Stack Sans Notch", sans-serif;
+}
+/*BOX 4 - Linha 02 / só colar e ajustar a posição*/
+.box4 {
+  position: absolute;
+  top: 870px;
+  left: 600px;
+  width: 250px;               /* largura */
+  height: 320px;              /* altura */
+  background-color: #ffffff;  /* cinza claro */
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;          /* centraliza horizontalmente e afasta de outros elementos */
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #333;
+}
+
+.contbox4 {
+  position: absolute;
+  top: -10px;
+  height: 200px;
+  left: 30px;
+  width: auto;
+  margin-top: 0px;
+}
+
+.titulobox4 {
+  position: absolute;
+  top: 180px;
+  font-family:  "Stack Sans Notch", sans-serif;
+  color: rgb(114, 114, 114);
+}
+
+.titulobox4 .valorbox4 {
+  position: absolute;
+  top: 45px;
+  left: 65px;
+  color: rgb(0, 0, 0);
+  font-family:  "Roboto Mono", sans-serif;
+  font-size: 20px;
+}
+
+.botao-carrinho04 {
+  position: absolute;
+  top: 95px;
+  left: 25px;
+  background-color: #4CAF50; /* cor do botão */
+  color: white;              /* cor do texto */
+  padding: 10px 30px;        /* tamanho interno */
+  border-radius: 10px;       /* arredonda os cantos */
+  border: #fff;
+  cursor: pointer;           /* muda o cursor ao passar o mouse */
+  white-space: nowrap;          /* impede quebra de linha */
+  font-family:  "Stack Sans Notch", sans-serif;
+}
+/*BOX5*/
+.box5 {
+  position: absolute;
+  top: 870px;
+  left: 850px;
+  width: 250px;               /* largura */
+  height: 320px;              /* altura */
+  background-color: #ffffff;  /* cinza claro */
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;          /* centraliza horizontalmente e afasta de outros elementos */
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #333;
+}
+
+.contbox5 {
+  position: absolute;
+  height: 200px;
+  left: 50px;
+  width: auto;
+  margin-top: 0px;
+}
+
+.titulobox5 {
+  position: absolute;
+  top: 180px;
+  font-family:  "Stack Sans Notch", sans-serif;
+  color: rgb(114, 114, 114);
+}
+
+.titulobox5 .valorbox5 {
+  position: absolute;
+  top: 45px;
+  left: 65px;
+  color: rgb(0, 0, 0);
+  font-family:  "Roboto Mono", sans-serif;
+  font-size: 20px;
+}
+
+.botao-carrinho05 {
+  position: absolute;
+  top: 95px;
+  left: 25px;
+  background-color: #4CAF50; /* cor do botão */
+  color: white;              /* cor do texto */
+  padding: 10px 30px;        /* tamanho interno */
+  border-radius: 10px;       /* arredonda os cantos */
+  border: #fff;
+  cursor: pointer;           /* muda o cursor ao passar o mouse */
+  white-space: nowrap;          /* impede quebra de linha */
+  font-family:  "Stack Sans Notch", sans-serif;
+}
+/*BOX6*/
+.box6 {
+  position: absolute;
+  top: 870px;
+  left: 1100px;
+  width: 250px;               /* largura */
+  height: 320px;              /* altura */
+  background-color: #ffffff;  /* cinza claro */
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;          /* centraliza horizontalmente e afasta de outros elementos */
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #333;
+}
+
+.contbox6 {
+  position: absolute;
+  height: 200px;
+  left: 30px;
+  width: auto;
+  margin-top: 0px;
+}
+
+.titulobox6 {
+  position: absolute;
+  top: 180px;
+  font-family:  "Stack Sans Notch", sans-serif;
+  color: rgb(114, 114, 114);
+}
+
+.titulobox6 .valorbox6 {
+  position: absolute;
+  top: 45px;
+  left: 65px;
+  color: rgb(0, 0, 0);
+  font-family:  "Roboto Mono", sans-serif;
+  font-size: 20px;
+}
+
+.botao-carrinho06 {
+  position: absolute;
+  top: 95px;
+  left: 25px;
+  background-color: #4CAF50; /* cor do botão */
+  color: white;              /* cor do texto */
+  padding: 10px 30px;        /* tamanho interno */
+  border-radius: 10px;       /* arredonda os cantos */
+  border: #fff;
+  cursor: pointer;           /* muda o cursor ao passar o mouse */
+  white-space: nowrap;          /* impede quebra de linha */
+  font-family:  "Stack Sans Notch", sans-serif;
+}
+/*BOX 7 - Linha 03 / só colar e ajustar a posição*/
+.box7 {
+  position: absolute;
+  top: 1190px;
+  left: 600px;
+  width: 250px;               /* largura */
+  height: 320px;              /* altura */
+  background-color: #ffffff;  /* cinza claro */
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;          /* centraliza horizontalmente e afasta de outros elementos */
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #333;
+}
+
+.contbox7 {
+  position: absolute;
+  height: 200px;
+  left: 30px;
+  width: auto;
+  margin-top: 0px;
+}
+
+.titulobox7 {
+  position: absolute;
+  top: 180px;
+  font-family:  "Stack Sans Notch", sans-serif;
+  color: rgb(114, 114, 114);
+}
+
+.titulobox7 .valorbox7 {
+  position: absolute;
+  top: 45px;
+  left: 65px;
+  color: rgb(0, 0, 0);
+  font-family:  "Roboto Mono", sans-serif;
+  font-size: 20px;
+}
+
+.botao-carrinho07 {
+  position: absolute;
+  top: 95px;
+  left: 25px;
+  background-color: #4CAF50; /* cor do botão */
+  color: white;              /* cor do texto */
+  padding: 10px 30px;        /* tamanho interno */
+  border-radius: 10px;       /* arredonda os cantos */
+  border: #fff;
+  cursor: pointer;           /* muda o cursor ao passar o mouse */
+  white-space: nowrap;          /* impede quebra de linha */
+  font-family:  "Stack Sans Notch", sans-serif;
+}
+/*BOX8*/
+.box8 {
+  position: absolute;
+  top: 1190px;
+  left: 850px;
+  width: 250px;               /* largura */
+  height: 320px;              /* altura */
+  background-color: #ffffff;  /* cinza claro */
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;          /* centraliza horizontalmente e afasta de outros elementos */
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #333;
+}
+
+.contbox8 {
+  position: absolute;
+  height: 200px;
+  left: 40px;
+  width: auto;
+  margin-top: 0px;
+}
+
+.titulobox8 {
+  position: absolute;
+  top: 180px;
+  font-family:  "Stack Sans Notch", sans-serif;
+  color: rgb(114, 114, 114);
+}
+
+.titulobox8 .valorbox8 {
+  position: absolute;
+  top: 45px;
+  left: 65px;
+  color: rgb(0, 0, 0);
+  font-family:  "Roboto Mono", sans-serif;
+  font-size: 20px;
+}
+
+.botao-carrinho08 {
+  position: absolute;
+  top: 95px;
+  left: 25px;
+  background-color: #4CAF50; /* cor do botão */
+  color: white;              /* cor do texto */
+  padding: 10px 30px;        /* tamanho interno */
+  border-radius: 10px;       /* arredonda os cantos */
+  border: #fff;
+  cursor: pointer;           /* muda o cursor ao passar o mouse */
+  white-space: nowrap;          /* impede quebra de linha */
+  font-family:  "Stack Sans Notch", sans-serif;
+}
+/*BOX9*/
+.box9 {
+  position: absolute;
+  top: 1190px;
+  left: 1100px;
+  width: 250px;               /* largura */
+  height: 320px;              /* altura */
+  background-color: #ffffff;  /* cinza claro */
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;          /* centraliza horizontalmente e afasta de outros elementos */
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #333;
+}
+
+.contbox9 {
+  position: absolute;
+  height: 200px;
+  left: 30px;
+  width: auto;
+  margin-top: 0px;
+}
+
+.titulobox9 {
+  position: absolute;
+  top: 180px;
+  font-family:  "Stack Sans Notch", sans-serif;
+  color: rgb(114, 114, 114);
+}
+
+.titulobox9 .valorbox9 {
+  position: absolute;
+  top: 45px;
+  left: 65px;
+  color: rgb(0, 0, 0);
+  font-family:  "Roboto Mono", sans-serif;
+  font-size: 20px;
+}
+
+.botao-carrinho09 {
+  position: absolute;
+  top: 95px;
+  left: 25px;
+  background-color: #4CAF50; /* cor do botão */
+  color: white;              /* cor do texto */
+  padding: 10px 30px;        /* tamanho interno */
+  border-radius: 10px;       /* arredonda os cantos */
+  border: #fff;
+  cursor: pointer;           /* muda o cursor ao passar o mouse */
+  white-space: nowrap;          /* impede quebra de linha */
+  font-family:  "Stack Sans Notch", sans-serif;
+}
+
+.rodape {
+  position: absolute;
+  top: 1600px;
+  height: 200px;
+  width: 1510px;
+  background-color:rgb(240, 233, 205);     /* cinza claro */
+  color: #000000;                   /* cor do texto */
+  padding: 20px 0;               /* altura e espaçamento interno */
+  font-family: "Poppins", sans-serif; /* fonte moderna */
+  font-size: 14px;
+  margin-top: 50px;              /* espaço antes do rodapé */
+}
+
+.infomacoes-empresa {
+  position: absolute;
+  top: 20px;
+  left: 200px;
+  line-height: 1.6;
+}
+
+.infomacoes-empresa-rede-social {
+  position: absolute;
+  top: 100px;
+  left: 200px;
+  line-height: 1.6;
+}
+
+.img_facebook {
+  position: absolute;
+  top: 170px;
+  left: 185px;
+  width: 50px;     /* diminui o tamanho */
+  height: auto;     /* mantém a proporção */
+}
+
+.img_tiktok {
+  position: absolute;
+  top: 165px;
+  left: 230px;
+  width: 40px;     /* diminui o tamanho */
+  height: auto;     /* mantém a proporção */
+}
+
+.img_instagram {
+  position: absolute;
+  top: 170px;
+  left: 280px;
+  width: 33px;     /* diminui o tamanho */
+  height: auto;     /* mantém a proporção */
+}
+
+.endereco {
+  position: absolute;
+  top: 20px;
+  left: 700px;
+  line-height: 1.6;
+}
+
+.funcionamento {
+  position: absolute;
+  top: 20px;
+  left: 1150px;
+  line-height: 1.6;
+}
+
+.direitos {
+  position: absolute;
+  top: 185px;
+  left: 600px;
+  line-height: 1.6;
+  color:rgb(114, 114, 114)
+}

@@ -1,0 +1,625 @@
+/* ==========================
+   Reset básico do site
+   ========================== */
+html {
+  margin: 0;
+  padding: 0;
+  font-family:  "Elms Sans", sans-serif;
+}
+
+/* ==========================
+   Barra superior (preta)
+   ========================== */
+.barra-topo {
+  background-color: #222;
+  color: #fff;
+  font-size: 14px;
+  padding: 5px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.barra-topo .links-topo a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 15px;
+  font-size: 13px;
+}
+
+.barra-topo .links-topo a:hover {
+  text-decoration: underline;
+}
+
+/* ==========================
+   Barra principal (branca)
+   ========================== */
+.barra {
+  width: 100%;
+  background-color: rgb(240, 233, 205);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-shadow: 0 10px 6px rgba(0,0,0,0.3);
+  z-index: 1000;
+}
+
+.barra .logo {
+  height: 80px;
+  width: auto;
+  margin-left: 10px;
+}
+
+/* ==========================
+   Barra de pesquisa
+   ========================== */
+.barra-pesquisa {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  padding: 5px 20px;
+  width: 450px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  margin-left: -50px;
+}
+
+.barra-pesquisa .icone-lupa {
+  height: 37px;
+  width: auto;
+  margin-right: 1px;
+}
+
+.barra-pesquisa input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+/* ==========================
+   Menu de navegação (Início | Quem Somos | Contato)
+   ========================== */
+.menu-links {
+  display: flex;
+  justify-content: flex-end;
+  gap: 60px; /* aumenta o espaçamento (padrão era 25px) */
+  margin-right: 0px;
+  margin-top: 10px;
+}
+
+.menu-links a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  font-family:  "Elms Sans", sans-serif;
+
+}
+.menu-links a:hover {
+  color: #040404;
+}
+
+/* ==========================
+   Ícone e dropdown do usuário
+   ========================== */
+.barra-icones {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 6px;
+  margin-right: 40px;
+}
+
+.barra-icones .icone-menu {
+  height: 40px;
+  width: auto;
+}
+
+.nome-usuario {
+  font-size: 15px;
+  color: #333;
+  font-weight: bold;
+  font-family:  "Elms Sans", sans-serif;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #ffffff;
+  min-width: 160px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  border-radius: 6px;
+  z-index: 999;
+  padding: 8px 0;
+  list-style: none;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #f2f2f2;
+}
+
+.dropdown.show .dropdown-menu {
+  display: block;
+}
+
+.conteudo {
+  background-color: rgb(255, 255, 255); /*Mudar cor do fundo do conteudo principal*/
+  color: rgb(0, 0, 0);
+  padding: 50px;
+  min-height: 1200px;
+  text-align: center;
+}
+
+.marca-prd-flamengo {
+  position: absolute;
+  top: 100px;
+  left: 300px;
+  width: 455px;               /* largura */
+  height: 600px;              /* altura */
+  background-color: #ffffff;  /* cinza claro */
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;          /* centraliza horizontalmente e afasta de outros elementos */
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #333;
+}
+
+.prod_flamengo {
+    height: 450px;
+    width: auto;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.box_informacoes_produto {
+  position: absolute;
+  top: 100px;
+  left: 750px;
+  width: 455px;               /* largura */
+  height: 455px;              /* altura */
+  background-color: #ffffff;  /* cinza claro */
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;          /* centraliza horizontalmente e afasta de outros elementos */
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #333;
+}
+
+.titulo_produto_flamengo {
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    font-size: 24px;
+    font-family: "Stack Sans Notch", sans-serif;
+}
+
+.codigo_produto_flamengo {
+    position: absolute;
+    top: 30px;
+    left: 22px;
+    font-size: 10px;
+    font-family: "Stack Sans Notch", sans-serif;
+}
+
+.valor_prd_flamengo {
+    position: absolute;
+    top: 50px;
+    left: 22px;
+    font-size: 36px;
+    color:rgb(82, 128, 255);
+    font-family:  "Stack Sans Notch", sans-serif;
+}
+
+.tipo_moeda_flamengo {
+    position: absolute;
+    top: 74px;
+    left: 200px;
+    font-size: 24px;
+    color:rgb(82, 128, 255);
+    font-family: "Stack Sans Notch", sans-serif;
+}
+
+.parcelamento_flamengo {
+    position: absolute;
+    top: 130px;
+    left: 25px;
+    font-size: 16px;
+    font-family: "Stack Sans Notch", sans-serif;
+}
+
+.parcelamento_flamengo {
+    position: absolute;
+    top: 130px;
+    left: 25px;
+    font-size: 16px;
+    font-family: "Stack Sans Notch", sans-serif;
+}
+
+.tamanho_flamengo {
+    position: absolute;
+    top: 170px;
+    left: 25px;
+    font-size: 16px;
+    font-family: "Stack Sans Notch", sans-serif;
+}
+
+.caixa-tamanho {
+  position: absolute;
+  top: 200px;
+  margin: 20px;
+  font-family: "Stack Sans Notch", sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+.caixa-tamanho select {
+  padding: 8px 100px;
+  border: 1px solid #1f1f1f;
+  border-radius: 8px; /* arredonda a caixa */
+  background-color: transparent;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.caixa-tamanho select:hover {
+  border-color: #999;
+  background-color: #f1f1f1;
+}
+
+.botao-compra {
+  position: absolute;
+  top: 280px;
+  left: 20px;
+  background-color: #007bff;    
+  color: rgb(255, 255, 255);                 
+  font-size: 16px;
+  font-weight: bold;
+  border: none;                 
+  border-radius: 10px;
+  padding: 12px 88px;           
+  cursor: pointer;              
+  transition: all 0.3s ease;    
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
+}
+
+.botao-compra:hover {
+  background-color: #0056b3;    
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+  transform: scale(1.05);       
+}
+
+.botao-compra:active {
+  transform: scale(0.98);       
+}
+
+.caixa-favorito {
+  position: absolute;
+  top: 280px;
+  left: 267px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #007bff;
+  border-radius: 10px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.caixa-favorito:hover {
+  border-color: #007bff;
+}
+
+.coracao {
+  font-size: 26px;
+  color: #999;
+  transition: color 0.3s ease;
+}
+
+/* Quando o coração for clicado */
+.coracao.ativo {
+  color: #ff4d4d; /* vermelho */
+}
+
+.historia {
+    position: absolute;
+    top: 310px; /*350 ORIGINAL*/
+    left: 30px;
+    font-family: "Stack Sans Notch", sans-serif;
+    text-align: left;
+}
+
+.historia {
+    position: absolute;
+    top: 460px;
+    left: -250px;
+    font-family: "Stack Sans Notch", sans-serif;
+}
+
+.informacoes-tecnicas {
+    position: absolute;
+    top: 500px;
+    left: 50px;
+    font-family: "Stack Sans Notch", sans-serif;
+    text-align: left;
+}
+
+.rodape {
+  position: absolute;
+  top: 1000px;
+  left: -750px;
+  height: 200px;
+  width: 1510px;
+  background-color:rgb(240, 233, 205);     /* cinza claro */
+  color: #000000;                   /* cor do texto */
+  padding: 20px 0;               /* altura e espaçamento interno */
+  font-family: "Poppins", sans-serif; /* fonte moderna */
+  font-size: 14px;
+  text-align: left;
+}
+
+.infomacoes-empresa {
+  position: absolute;
+  top: 20px;
+  left: 200px;
+  line-height: 1.6;
+   text-align: left;
+}
+
+.infomacoes-empresa-rede-social {
+  position: absolute;
+  top: 100px;
+  left: 200px;
+  line-height: 1.6;
+}
+
+.img_facebook {
+  position: absolute;
+  top: 170px;
+  left: 185px;
+  width: 50px;     /* diminui o tamanho */
+  height: auto;     /* mantém a proporção */
+}
+
+.img_tiktok {
+  position: absolute;
+  top: 165px;
+  left: 230px;
+  width: 40px;     /* diminui o tamanho */
+  height: auto;     /* mantém a proporção */
+}
+
+.img_instagram {
+  position: absolute;
+  top: 170px;
+  left: 280px;
+  width: 33px;     /* diminui o tamanho */
+  height: auto;     /* mantém a proporção */
+}
+
+.endereco {
+  position: absolute;
+  top: 20px;
+  left: 700px;
+  line-height: 1.6;
+}
+
+.funcionamento {
+  position: absolute;
+  top: 20px;
+  left: 1150px;
+  line-height: 1.6;
+}
+
+.direitos {
+  position: absolute;
+  top: 185px;
+  left: 600px;
+  line-height: 1.6;
+  color:rgb(114, 114, 114)
+}
+
+.titulo_relacionados {
+  position: absolute;
+  top: 620px;
+  left: -500px;
+  font-size: 24px;
+  text-decoration: underline;
+}
+
+.prod_relac01 {
+  position: absolute;
+  top: 650px;
+  left: -500px;
+  height: 300px;
+  width: 250px;
+  background-color: #fcfcfc;  /* cinza claro */
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;          /* centraliza horizontalmente e afasta de outros elementos */
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #333;
+}
+
+.prod_relac001{
+  position: absolute;
+  left: 25px;
+  top: 0px;
+  height: 200px;
+  width: auto;
+}
+
+.txt_prod_relac01{
+  position: absolute;
+  top: 170px;
+  left: 0px;
+  font-size: 24px;
+  font-family: "Stack Sans Notch", sans-serif;
+  color: #000000
+}
+
+.valor_prod_relac01 {
+  position: absolute;
+  top: 230px;
+  left: 75px;
+  font-size: 24px;
+  font-family: "Stack Sans Notch", sans-serif;
+  color: #000000
+}
+
+
+.prod_relac02 {
+  position: absolute;
+  top: 650px;
+  left: -240px;
+  height: 300px;
+  width: 250px;
+  background-color: #fcfcfc;  /* cinza claro */
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;          /* centraliza horizontalmente e afasta de outros elementos */
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #333;
+}
+
+.prod_relac002{
+  position: absolute;
+  left: 25px;
+  top: 0px;
+  height: 200px;
+  width: auto;
+}
+
+.txt_prod_relac02{
+  position: absolute;
+  top: 170px;
+  left: 0px;
+  font-size: 24px;
+  font-family: "Stack Sans Notch", sans-serif;
+  color: #000000
+}
+
+.valor_prod_relac02 {
+  position: absolute;
+  top: 230px;
+  left: 75px;
+  font-size: 24px;
+  font-family: "Stack Sans Notch", sans-serif;
+  color: #000000
+}
+
+.prod_relac03 {
+  position: absolute;
+  top: 650px;
+  left: 20px;
+  height: 300px;
+  width: 250px;
+  background-color: #fcfcfc;  /* cinza claro */
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;          /* centraliza horizontalmente e afasta de outros elementos */
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #333;
+}
+
+.prod_relac003{
+  position: absolute;
+  left: 25px;
+  top: 0px;
+  height: 200px;
+  width: auto;
+}
+
+.txt_prod_relac03{
+  position: absolute;
+  top: 170px;
+  left: 0px;
+  font-size: 24px;
+  font-family: "Stack Sans Notch", sans-serif;
+  color: #000000
+}
+
+.valor_prod_relac03 {
+  position: absolute;
+  top: 230px;
+  left: 75px;
+  font-size: 24px;
+  font-family: "Stack Sans Notch", sans-serif;
+  color: #000000
+}
+
+
+.prod_relac04 {
+  position: absolute;
+  top: 650px;
+  left: 280px;
+  height: 300px;
+  width: 250px;
+  background-color: #fcfcfc;  /* cinza claro */
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;          /* centraliza horizontalmente e afasta de outros elementos */
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #333;
+}
+
+.prod_relac004{
+  position: absolute;
+  left: 25px;
+  top: 0px;
+  height: 200px;
+  width: auto;
+}
+
+.txt_prod_relac04{
+  position: absolute;
+  top: 170px;
+  left: 0px;
+  font-size: 24px;
+  font-family: "Stack Sans Notch", sans-serif;
+  color: #000000
+}
+
+.valor_prod_relac04 {
+  position: absolute;
+  top: 230px;
+  left: 75px;
+  font-size: 24px;
+  font-family: "Stack Sans Notch", sans-serif;
+  color: #000000
+}
