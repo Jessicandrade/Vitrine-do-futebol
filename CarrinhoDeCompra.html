@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Vitrine do Futebol</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <h1>🛒 Carrinho de Compras</h1>
+      <img class="cart-icon" src="https://cdn-icons-png.flaticon.com/512/3081/3081559.png" alt="carrinho">
+    </div>
+  </header>
+
+  <main class="main">
+    <section id="cart-section" class="card">
+      <h2>👕 Itens no carrinho</h2>
+
+      <div id="products" class="products">
+        <!-- Produto 1 -->
+        <article class="product" data-price="850">
+          <img src="img_times/Camisa_Brasileira.png" alt="Seleção Brasileira">
+          <div class="info">
+            <h3>🇧🇷 Camisa Seleção Brasileira (2002)</h3>
+            <p>Estado: <strong>Nova</strong></p>
+            <label>Tamanho
+              <select class="size">
+                <option value="">--</option><option>P</option><option>M</option><option>G</option><option>GG</option>
+              </select>
+            </label>
+            <label>Quantidade
+              <input class="qty" type="number" min="1" value="1">
+            </label>
+            <p class="price-label">Valor: R$ <span class="price-text">850</span></p>
+            <p class="line-total">Total: R$ <span class="line-total-text">850</span></p>
+          </div>
+        </article>
+
+        <!-- Produto 2 -->
+        <article class="product" data-price="600">
+          <img src="img_times/camiseta_corinthians.png" alt="Corinthians">
+          <div class="info">
+            <h3>⚫⚪ Camisa Corinthians (2001)</h3>
+            <p>Estado: <strong>Semi-nova</strong></p>
+            <label>Tamanho
+              <select class="size">
+                <option value="">--</option><option>P</option><option>M</option><option>G</option><option>GG</option>
+              </select>
+            </label>
+            <label>Quantidade
+              <input class="qty" type="number" min="1" value="1">
+            </label>
+            <p class="price-label">Valor: R$ <span class="price-text">600</span></p>
+            <p class="line-total">Total: R$ <span class="line-total-text">600</span></p>
+          </div>
+        </article>
+
+        <!-- Produto 3 -->
+        <article class="product" data-price="1250">
+          <img src="img_times/camisa_flamengo.png" alt="Flamengo">
+          <div class="info">
+            <h3>❤️🖤 Camisa Flamengo (1981)</h3>
+            <p>Estado: <strong>Nova</strong></p>
+            <label>Tamanho
+              <select class="size">
+                <option value="">--</option><option>P</option><option>M</option><option>G</option><option>GG</option>
+              </select>
+            </label>
+            <label>Quantidade
+              <input class="qty" type="number" min="1" value="1">
+            </label>
+            <p class="price-label">Valor: R$ <span class="price-text">1250</span></p>
+            <p class="line-total">Total: R$ <span class="line-total-text">1250</span></p>
+          </div>
+        </article>
+      </div>
+
+     <div class="summary">
+    <p>Frete estimado: R$ <span id="shipping">25</span></p>
+    <h3>Total Geral: <span id="grand-total">R$ 0,00</span></h3>
+    <button id="to-payment" disabled>Avançar para Pagamento 💳</button>
+  </div>
+    </section>
+  </main>
+
+  <script src="Js/cart.js"></script>
+</body>
+</html>

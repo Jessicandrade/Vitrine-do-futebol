@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>💳 Pagamento — Vitrine do Futebol</title>
+
+  <!-- Importa o CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Importa o JS (carregado após o HTML) -->
+  <script defer src="js/payment.js"></script>
+</head>
+<body>
+  <!-- 🔹 Cabeçalho -->
+  <header class="header">
+    <div class="header-inner">
+      <h1>💳 Pagamento</h1>
+    </div>
+  </header>
+
+  <!-- 🔹 Conteúdo principal -->
+  <main class="main">
+    <section id="payment-card" class="card">
+      <h2>Resumo do pedido</h2>
+
+      <!-- Onde serão exibidos os produtos vindos do localStorage -->
+      <div id="payment-products" class="products"></div>
+
+      <!-- Valor total da compra -->
+      <div class="summary">
+        <h3>Total a pagar: <span id="payment-total">R$ 0,00</span></h3>
+      </div>
+
+      <!-- Escolha do método de pagamento -->
+      <div class="pay-methods">
+        <label><input type="radio" name="method" value="credito"> Crédito</label>
+        <label><input type="radio" name="method" value="debito"> Débito</label>
+        <label><input type="radio" name="method" value="pix"> Pix</label>
+      </div>
+
+      <!-- 💠 Modal do Pix (inicialmente escondido) -->
+      <div id="pix-modal" class="hidden modal">
+        <div class="modal-content">
+          <h3>🔑 Chave Pix</h3>
+          <p><strong>VitrineDoFutebol@store.com</strong></p>
+
+          <div class="modal-actions">
+            <!-- Botão "Pagar" (habilitado após simulação de tempo) -->
+            <button id="paid-btn" disabled>Pagar</button>
+            <!-- Botão para fechar o modal -->
+            <button id="cancel-btn">Cancelar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 💳 Caixa para dados de cartão de crédito -->
+      <div id="credit-box" class="hidden small-card card">
+        <label>Bandeira:
+          <select id="card-brand">
+            <option>Mastercard</option>
+            <option>Visa</option>
+            <option>Elo</option>
+          </select>
+        </label>
+
+        <label>Parcelas:
+          <select id="installments"></select>
+        </label>
+      </div>
+
+      <!-- Botão principal de finalização -->
+      <div class="actions">
+        <button id="finish" class="primary">Finalizar compra ✅</button>
+      </div>
+
+      <!-- Mensagem de sucesso -->
+      <div id="success" class="hidden success card">
+        <h2>🎉 Compra efetuada com sucesso!</h2>
+        <p>Sua camiseta relíquia chegará em até 5 dias úteis ⚽</p>
+        <img src="https://cdn-icons-png.flaticon.com/512/833/833310.png" alt="bola" class="soccer-ball">
+      </div>
+    </section>
+  </main>
+</body>
+</html>

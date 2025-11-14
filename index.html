@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Vitrine do Futebol</title>
+
+  <!-- Arquivo CSS externo -->
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js"></script>
+  <!-- Fonte do Google / importei de lá-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<!--Fonte da imagem Principal-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Momo+Trust+Display&display=swap" rel="stylesheet">
+<!--Fonte do Titulo do produto-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Momo+Trust+Display&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Stack+Sans+Notch:wght@200..700&family=Stack+Sans+Text:wght@200..700&display=swap" rel="stylesheet">
+<!--Fonte do valor do produto-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Momo+Trust+Display&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Stack+Sans+Notch:wght@200..700&family=Stack+Sans+Text:wght@200..700&display=swap" rel="stylesheet">
+<!--Fonte nome filtro-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Momo+Trust+Display&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Stack+Sans+Notch:wght@200..700&family=Stack+Sans+Text:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ==========================
+       BARRA BRANCA NO TOPO
+       Contém o logo, pesquisa e ícone do usuário
+       ========================== -->
+       <!-- BARRA SUPERIOR EXTRA -->
+<div class="barra-topo">
+  <span>Frete grátis para pedidos acima de R$199!</span>
+  <nav class="links-topo">
+    <a href="#">Ajuda</a>
+    <a href="#">Ofertas</a>
+    <a href="#">Fale Conosco</a>
+  </nav>
+</div>
+  <header class="barra">
+    <!-- Logo -->
+    <img src="img/logo_vitrine.jpeg" alt="Logo do Site" class="logo">
+   
+    <!-- Barra de pesquisa -->
+    <div class="barra-pesquisa">
+      <img src="img/lupa_pesquisar.png" alt="Lupa" class="icone-lupa">
+      <input type="text" placeholder="Buscar Camisetas..." id="input-pesquisa">
+    </div>
+    <!-- ==========================
+     LINHA DE NAVEGAÇÃO SECUNDÁRIA
+     ========================== -->
+<div class="menu-links">
+  <a href="#">Início</a>
+  <a href="#">Quem Somos</a>
+  <a href="#">Contato</a>
+</div>
+
+    <!-- Ícone + Nome do Usuário -->
+<div class="barra-icones">
+  <img src="img/login_img.png" alt="Perfil" class="icone-menu">
+
+  <!-- Botão dropdown -->
+  <div class="dropdown">
+    <button class="nome-usuario">João Brelaz ▼</button>
+    <ul class="dropdown-menu">
+      <li><a href="#">Minha Conta</a></li>
+      <li><a href="#">Pedidos</a></li>
+      <li><a href="#">Endereços</a></li>
+      <li><a href="#">Minha Carteira</a></li>
+    </ul>
+  </div>
+</div>
+
+  </header>
+
+  <!-- ==========================
+       SEÇÃO DE IMAGEM PRINCIPAL (TOPO)
+       ========================== -->
+  <section class="topo">
+    <div class="titulo-img">
+      <h1>Camisetas</h1>
+      <h1>Colecionáveis</h1>
+    </div>
+    <div class="subtitulo-img">
+      <p>Reviva a história do futebol com camisetas<br>
+        autênticas dos seus times do coração.
+      </p>
+    </div>
+   <!--Imagem de compras-->
+    <img src="img/sacola_compra.png" alt="sacola compra" class="sacola-compra">
+   <!--Frase de Compras-->
+   <div class="frases-compras">
+    <p>+2000 Vendas</p>
+   </div>
+   <!--Imagem de frete-->
+    <img src="img/caminhão.png" alt="caminhão frete" class="frete-img">
+   <!--Frase de frete-->
+   <div class="frases-frete">
+    <p>Frete grátis a partir de R$300,00</p>
+   </div>
+    <!--Imagem de certificado-->
+    <img src="img/icone_compra.png" alt="icone verde" class="certificado-img">
+   <!--Frase de certificado-->
+   <div class="frases-certificado">
+    <p>Compra 100% Segura</p>
+   </div>
+  </section>
+
+  <!-- ==========================
+       SEÇÃO DE CONTEÚDO PRINCIPAL
+       ========================== -->
+  <!--Caixas de conteudo linha 01-->
+ <section class="conteudo">
+  <div class="filtro">
+    <div class="linha"></div>
+      <div class="nome-filtro">
+        <h4>Filtro</h4>
+      </div>
+            <div class="filtro-tamanhos">
+            <h3>Tamanhos</h3>
+
+            <label>
+              <input type="checkbox" class="check"> P
+            </label>
+
+            <label>
+              <input type="checkbox" class="check"> M
+            </label>
+
+            <label>
+              <input type="checkbox" class="check"> G
+            </label>
+
+            <label>
+              <input type="checkbox" class="check"> GG
+            </label>
+          </div>
+
+            <div class="filtro-condiçoes">
+            <h3>Condições</h3>
+
+            <label>
+              <input type="checkbox" class="check"> Nova
+            </label>
+
+            <label>
+              <input type="checkbox" class="check"> Colecionáveis
+            </label>
+
+            <label>
+              <input type="checkbox" class="check"> Usadas
+            </label>
+          </div>
+
+          <button class="filtro-pesquisar">APLICAR</button>
+  </div>
+<!-- Box 1 - Linha 01 -->
+  <div class="box1">
+    <img src="img_times/camisa_flamengo.png" alt="camisa-flamengo" class="contbox1">
+      <div class="titulobox1">
+        <h4>CAMISA FLAMENGO II RETRÔ 08/09<br>
+            <div class="valorbox1">
+              <p>R$ 1250,00</p>
+            </div>
+            <button onclick="window.location.href='tela_carrinho_flamengo.html'" class="botao-carrinho01">Adicionar ao Carrinho...</button>
+        </h4>
+      </div>
+  </div>
+<!-- Box 2 -->
+   <div class="box2">
+    <img src="img_times/camiseta_corinthians.png" alt="camisa-corinthians" class="contbox2">
+      <div class="titulobox2">
+        <h4>CAMISA CORINTHIANS PEPSI 2001<br>
+            <div class="valorbox2">
+              <p>R$ 600,00</p>
+            </div>
+            <button onclick="window.location.href='tela_carrinho_corinthians.html'" class="botao-carrinho02">Adicionar ao Carrinho...</button>
+        </h4>
+      </div>
+    </div>
+<!-- Box 3 -->
+   <div class="box3">
+    <img src="img_times/camiseta_remo.png" alt="camisa-remo" class="contbox3">
+      <div class="titulobox3">
+        <h4>CAMISA REMO RETRÔ HOME 1998/99<br>
+            <div class="valorbox3">
+              <p>R$ 279,00</p>
+            </div>
+            <button class="botao-carrinho03">Adicionar ao Carrinho...</button>
+        </h4>
+      </div>
+  </div>
+  <!-- Box 4 - Linha 02 -->
+  <div class="box4">
+    <img src="img_times/Camisa_Brasileira.png" alt="camisa-brasil" class="contbox4">
+      <div class="titulobox4">
+        <h4>CAMISA RETRÔ SELEÇÃO BRASILEIRA 2002<br>
+            <div class="valorbox4">
+              <p>R$ 850,00</p>
+            </div>
+            <button onclick="window.location.href='tela_carrinho_brasil.html'" class="botao-carrinho04">Adicionar ao Carrinho...</button>
+        </h4>
+      </div>
+  </div>
+<!-- Box 5 -->
+   <div class="box5">
+    <img src="img_times/Camisa_palmeiras.png" alt="camisa-palmeiras" class="contbox5">
+      <div class="titulobox5">
+        <h4>PALMEIRAS NO FUTEBOL PARMALAT ANOS 90<br>
+            <div class="valorbox5">
+              <p>R$ 305,00</p>
+            </div>
+            <button class="botao-carrinho05">Adicionar ao Carrinho...</button>
+        </h4>
+      </div>
+  </div>
+<!-- Box 6 -->
+   <div class="box6">
+    <img src="img_times/camisa_athlético_paranaense.png" alt="camisa-atlhetico-paranaense" class="contbox6">
+      <div class="titulobox6">
+        <h4>CAMISA ATHLÉTICO PARANAENSE 2000/01<br>
+            <div class="valorbox6">
+              <p>R$ 220,00</p>
+            </div>
+            <button class="botao-carrinho06">Adicionar ao Carrinho...</button>
+        </h4>
+      </div>
+  </div>
+  <!-- Box 7 - Linha 03 -->
+  <div class="box7">
+    <img src="img_times/Camisa_do_Vasco.png" alt="camisa-vasco" class="contbox7">
+      <div class="titulobox7">
+        <h4>CAMISA DO VASCO RETRÔ 2000 HOME AWAY<br>
+            <div class="valorbox7">
+              <p>R$ 380,00</p>
+            </div>
+            <button class="botao-carrinho07">Adicionar ao Carrinho...</button>
+        </h4>
+      </div>
+  </div>
+<!-- Box 8 -->
+   <div class="box8">
+    <img src="img_times/Camisa_São_Paulo_FC.png" alt="camisa-sao-paulo" class="contbox8">
+      <div class="titulobox8">
+        <h4>CAMISA SÃO PAULO FC ADIDAS 1989 COCA COLA<br>
+            <div class="valorbox8">
+              <p>R$ 280,00</p>
+            </div>
+            <button class="botao-carrinho08">Adicionar ao Carrinho...</button>
+        </h4>
+      </div>
+  </div>
+<!-- Box 9 -->
+   <div class="box9">
+    <img src="img_times/camisa_santos.png" alt="camisa-santos" class="contbox9">
+      <div class="titulobox9">
+        <h4>CAMISA SANTOS FC 1993 AWAY JERSEY<br>
+            <div class="valorbox9">
+              <p>R$ 390,00</p>
+            </div>
+            <button class="botao-carrinho09">Adicionar ao Carrinho...</button>
+        </h4>
+      </div>
+  </div>
+</section>
+
+<footer class="rodape">
+  <div class="infomacoes-empresa">
+    <p>Vitrine do Futebol - CNPJ 00.000.000/0001-00<br>
+       Whatsapp: +55 11 99999-9999<br>
+       Tel Fixo: +55 9999-9999</p>
+  </div>
+        <div class="infomacoes-empresa-rede-social">
+        <p>Instagram: @Vitrinedofutebol<br>
+          Email: contato@vitrinefutebol.com.br</p>
+      </div>
+            <img src="img_redes_sociais/Logo_facebook.png" alt="Facebook" class="img_facebook">
+            <img src="img_redes_sociais/TikTok_Logo.png" alt="Tiktok" class="img_tiktok">
+            <img src="img_redes_sociais/Instagram_Logo.png" alt="Instagram" class="img_instagram">
+                
+                <div class="endereco">
+                  <p>Endereço:<br>
+                    Rua dos Numeros, 0000<br>
+                    Bairro São Numeros<br>
+                    CEP: 00000-000<br>
+                    São Paulo - SP<br>
+                    Brasil</p>
+                </div>
+                    <div class="funcionamento">
+                    <p>Funcionamento:<br>
+                      Segunda a Sexta - 9h às 18h<br>
+                      Sábado - 9h às 13h</p>
+                  </div>
+                        <div class="direitos">
+                              <p>© 2025 — Seu Site. Todos os direitos reservados.</p>
+                        </div>
+          </footer>
+</body>
+</html>
