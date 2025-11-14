@@ -12,26 +12,39 @@ Tecnologias
 - JavaScript
 
 Estrutura do projeto
-  Vitrine-do-futebol/
+Vitrine-do-futebol/
   
-  -index.html
-  - produto_flamengo.html
-  - carrinho.html
-  - pagamento.html
-      css/
-      - style.css
-      - style_flamengo.css
-      - style.css
+-index.html
+- produto_flamengo.html
+- carrinho.html
+- pagamento.html
+  
+  css/
+- style.css
+- style_flamengo.css
+- style.css
 
-      js/
-      - script.js
-      - cart.js
-      - payment.js
+  js/
+- script.js
+- cart.js
+- payment.js
 
-      img_times/
-      -logo_vitrine.jpeg
-      - lupa_pesquisar.png
-      - ...
+  img_times/
+- Camisa_Brasileira.png
+- lupa_pesquisar.png
+- CR_Flamengo_carrinho.png
+- Camisa_Brasileira.png
+- Camisa_São_Paulo_FC.png
+- Camisa_do_Vasco.png
+- Camisa_palmeiras.png
+- CarrinhoDeCompra.html
+- Pagamento.html
+- Wireframes
+- camisa_athlético_paranaense.png
+- camisa_flamengo.png
+- camisa_santos.png
+- camiseta_corinthians.png
+- camiseta_remo.png
 
-      README.md
+  README.md
   
